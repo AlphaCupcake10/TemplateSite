@@ -42,17 +42,24 @@ a
     
     transition: all 700ms cubic-bezier(.61,.01,.04,.98);
     flex-grow: 1;
-
+}
+.card div
+{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 700ms cubic-bezier(.61,.01,.04,.98);
 }
 
 .card:hover
 {
     flex-grow: 4;
     border: 1px solid #ffffff59;
+}
+.card:hover div
+{
+    transform: scale(1.2);
 }
 
 .card h3
@@ -77,6 +84,6 @@ a
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover{
+  /* ::-webkit-scrollbar-thumb:hover{
     
-  }
+  } */
