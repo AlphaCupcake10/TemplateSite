@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family: var(--main-font);
@@ -67,6 +71,32 @@ a
     color: var(--accent-color);
 }
 
+.card i
+{
+    padding: 1rem;
+    font-size: 4rem;
+}
+@media(max-width:600px)
+{
+    .card i
+    {
+        padding: .25rem;
+        font-size: 1rem;
+    }
+    .card h3
+    {
+        padding: .25rem;
+        font-size: 1rem;
+    }
+    .card
+    {
+        padding: 1rem;
+    }
+    .card:hover div
+    {
+        transform: scale(1.05);
+    }
+}
 
 
 ::-webkit-scrollbar {

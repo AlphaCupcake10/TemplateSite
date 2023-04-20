@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackDefine 2.0</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/section.css">
     <script src="assets/javascript/navbar.js" defer></script>
+    <script src="assets/javascript/smoothScroll.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar top">
             <img class="nav-item flex" src="assets/images/Logo.png">
             <div class="flex nav-menu">
-                <a class="nav-item flex" href="#about-me">ABOUT US</a>
+                <a class="nav-item flex" href="#contact">CONTACT US</a>
+                <a class="nav-item flex" href="#about-us">ABOUT US</a>
                 <a class="nav-item flex" href="#home">HOME</a>
             </div>
             <div class="hamburger-container flex">
@@ -31,7 +32,7 @@
         </div>
     </header>
     <main>
-        <div class="hero flex col">
+        <div class="hero flex col" id="home">
             <img class="banner" src="assets/images/TempBanner.jpg" alt="">
     
             <img class="title-logo" src="assets/images/HashDefineLogo.png" alt="">
@@ -47,51 +48,93 @@
                 <h2>ABOUT</h2>
                 <h1>THE HACKATHON</h1>
             </div>
+            <br>    
+            <p class="secondary">
+                HackDefine 2.0, the second iteration of Hash Define's hackathon where novice and experienced coders come together to learn, code, and grow with mentorship, emphasizing open education and free-flowing ideas. Our ultimate goal is to create an atmosphere of collaboration that promotes personal and professional development. This unique event has immense potential for growth and development, offering limitless possibilities to expand your skills and knowledge.
             <br>
-            <div class="content">
-                <p>
-                    HackDefine 2.0, the second iteration of Hash Define's hackathon where novice and experienced coders come together to learn, code, and grow with mentorship, emphasizing open education and free-flowing ideas. Our ultimate goal is to create an atmosphere of collaboration that promotes personal and professional development. This unique event has immense potential for growth and development, offering limitless possibilities to expand your skills and knowledge.
-                <br>
-                <br>
-                <div class="cards-container">
-                    <div class="card">
-                        <div>
-                            <h3>DATE</h3>
-                            <p>TBD</p>
-                        </div>
+            <br>
+            <div class="cards-container">
+                <div class="card">
+                    <div>
+                        <h3>DATE</h3>
+                        <p>TBD</p>
                     </div>
-                    <div class="card">
-                        <div>
-                            <h3>TEAM SIZE</h3>
-                            <p>1-5</p>
-                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>TEAM SIZE</h3>
+                        <p>1-5</p>
                     </div>
-                    <div class="card">
-                        <div>
-                            <h3>THEME</h3>
-                            <p>Open Innovation</p>
-                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>THEME</h3>
+                        <p>Open Innovation</p>
                     </div>
-                    <div class="card">
-                        <div>
-                            <h3>MODE</h3>
-                            <p>Hybrid</p>
-                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>MODE</h3>
+                        <p>Hybrid</p>
                     </div>
-                    <div class="card">
-                        <div>
-                            <h3>FEE</h3>
-                            <p>None</p>
-                        </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>FEE</h3>
+                        <p>None</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="about-us">
             <h1>ABOUT US</h1>
             <br>
-            <p>
+            <p class="secondary">
                 Hash Define is a non-profit organization which conducts technical and non-technical events across colleges and aims to give life to a coding culture that promotes learning that is motivated by a fascination for new technologies.
+        </section>
+        <section id="contact">
+            <h1>CONTACT US</h1>
+            <br>
+            <div class="cards-container">
+                <div class="card" onclick="window.open('https://github.com/hash-define-organization')">
+                    <div>
+                        <h3>GITHUB</h3>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="card" onclick="window.open('https://discord.gg/Zd766Gn4aa')">
+                    <div>
+                        <h3>DISCORD</h3>
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </div>
+                <div class="card" onclick="window.open('https://www.linkedin.com/company/defineweare/mycompany/')">
+                    <div>
+                        <h3>LINKEDIN</h3>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="card" onclick="window.open('https://twitter.com/_hashDefine')">
+                    <div>
+                        <h3>TWITTER</h3>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="card" onclick="window.open('https://instagram.com/hash_define?utm_medium=copy_link')">
+                    <div>
+                        <h3>INSTAGRAM</h3>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="card" onclick="window.open('https://youtube.com/@hashdefine6281')">
+                    <div>
+                        <h3>YOUTUBE</h3>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

@@ -1,20 +1,20 @@
 section
 {
     /* min-height: 100vh; */
-    padding: 4rem 12rem;
+    padding: 6rem 12rem;
 }
 @media(max-width:800px)
 {
     section
     {
-        padding: 2rem 5rem;
+        padding: 4rem 5rem;
     }
 }
 @media(max-width:600px)
 {
     section
     {
-        padding: 2rem 2rem;
+        padding: 4rem 2rem;
     }
 }
 
@@ -23,6 +23,7 @@ section h1
     line-height: 90%;
     font-size: 4rem;
     font-weight: 900;
+    margin-bottom: 1.5rem;
 }
 section h2
 {
@@ -35,6 +36,18 @@ section h1::after
 {
     content: ".";
     color: var(--accent-color);
+}
+section h1::before
+{
+    content: "";
+
+    height: 3px;
+    width:40%;
+
+    background-color: var(--accent-color);
+
+    position: absolute;
+    transform: translateY(5rem);
 }
 @media(max-width:800px)
 {
@@ -57,4 +70,9 @@ section h1::after
     {
         font-size: 1rem;
     }
+}
+
+section p.secondary
+{
+    opacity: .6;
 }
