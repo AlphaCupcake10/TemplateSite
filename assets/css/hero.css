@@ -42,3 +42,7 @@
     font-size: 1rem;
     opacity: .5;
 }
+:root[data-theme='light'] .hero
+{
+    color: var(--dark-color);
+}

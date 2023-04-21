@@ -8,5 +8,12 @@
     --accent-color: #016fea;
     --dark-color:rgb(25, 24, 30);
     --light-color:rgb(249, 248, 255);
-    --transition-default:all 200ms ease-in-out
+    --gradient:linear-gradient(to bottom, #00c0fa 0%, #016fea 100%);
+    
+    --transition-default:all 200ms ease-in-out;
+}
+:root[data-theme='light']
+{
+    --dark-color:rgb(229, 228, 237);
+    --light-color:rgb(53, 52, 59);;
 }

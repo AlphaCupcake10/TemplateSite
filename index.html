@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackDefine 2.0</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/section.css">
     <script src="assets/javascript/navbar.js" defer></script>
-    <script src="assets/javascript/smoothScroll.js" defer></script>
+    <script src="assets/javascript/theme.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar top">
             <img class="nav-item flex" src="assets/images/Logo.png">
             <div class="flex nav-menu">
+                <div class="nav-item flex" onclick="toggleAccent()"><span class="material-icons">gradient</span></div>
+                <div class="nav-item flex" onclick="toggleTheme()"><span class="material-icons">dark_mode</span></div>
                 <a class="nav-item flex" href="#contact">CONTACT US</a>
                 <a class="nav-item flex" href="#about-us">ABOUT US</a>
                 <a class="nav-item flex" href="#home">HOME</a>

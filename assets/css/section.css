@@ -1,9 +1,9 @@
 section
 {
     /* min-height: 100vh; */
-    padding: 6rem 12rem;
+    padding: 6rem 20rem;
 }
-@media(max-width:800px)
+@media(max-width:1200px)
 {
     section
     {
@@ -14,7 +14,7 @@ section
 {
     section
     {
-        padding: 4rem 2rem;
+        padding: 4rem 1.5rem;
     }
 }
 
@@ -33,6 +33,16 @@ section h2
     font-size: 2rem;
     font-weight: 900;
     color: var(--accent-color);
+}
+:root[data-accent='gradient'] h2,:root[data-accent='gradient'] h3,:root[data-accent='gradient'] h1::after,:root[data-accent='gradient'] h1::before 
+{
+    background:var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+:root[data-accent='gradient'] h1::before 
+{
+    background:var(--gradient);
 }
 section h1::after
 {
@@ -66,7 +76,7 @@ section h1::before
 {
     section h1
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     section h2
     {

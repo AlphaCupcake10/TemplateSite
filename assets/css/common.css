@@ -1,8 +1,10 @@
 *
 {
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 700ms var(--transition-default);
 }
 html
 {
@@ -46,6 +48,8 @@ a
     
     transition: all 700ms cubic-bezier(.61,.01,.04,.98);
     flex-grow: 1;
+
+    box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.15);
 }
 .card div
 {
@@ -55,11 +59,15 @@ a
     flex-direction: column;
     transition: all 700ms cubic-bezier(.61,.01,.04,.98);
 }
-
 .card:hover
 {
     flex-grow: 4;
     border: 1px solid #ffffff59;
+}
+.card:active
+{
+    flex-grow: 10;
+    transform: scale(.9);
 }
 .card:hover div
 {
