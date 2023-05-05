@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 700ms var(--transition-default);
+    transition: var(--transition-default);    
 }
 html
 {
@@ -83,6 +83,11 @@ a
 {
     padding: 1rem;
     font-size: 4rem;
+}
+.card img
+{
+    height: 4rem;
+    /* padding: 1rem; */
 }
 @media(max-width:600px)
 {

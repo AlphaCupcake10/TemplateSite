@@ -1,9 +1,9 @@
 section
 {
     /* min-height: 100vh; */
-    padding: 6rem 20rem;
+    padding: 6rem 16rem;
 }
-@media(max-width:1200px)
+@media(max-width:1000px)
 {
     section
     {
@@ -54,12 +54,17 @@ section h1::before
     content: "";
 
     height: 3px;
-    width:100%;
+    width:0;
 
     background-color: var(--accent-color);
 
     position: absolute;
     bottom: -1rem;
+    transition: var(--transition-default);
+}
+section:hover h1::before
+{
+    width:100%;
 }
 @media(max-width:800px)
 {
