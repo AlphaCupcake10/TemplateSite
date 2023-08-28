@@ -111,7 +111,7 @@ let colabs =
 
     }
 ]
-generateColabs();
+// generateColabs();
 function generateColabs()
 {
     for(let tier = 0 ; tier < colabs.length ; tier ++)
